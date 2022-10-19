@@ -1,33 +1,26 @@
-
-/**
- * Write a description of class fizzbuzz here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class fizzbuzz
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class fizzbuzz
-     */
-    public fizzbuzz()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+public class fizzbuzz {
+    public static void main(String[] args) {
+        int length = 100;
+        int x;
+        int y;
+        for (int i = 0 ; i <= length ; i++) {
+            x = i;
+            y = i;
+            while (x>=5) {
+                x = x-5;
+            }
+            while (y>=3) {
+                y = y-3;
+            }
+            if (x == 0 && y == 0) {
+                System.out.println("fizzbuzz");
+            } else if (x == 0){
+                System.out.println("buzz");
+            } else if (y == 0){
+                System.out.println("fizz");
+            } else {
+                System.out.println(i);
+            }
+        }
     }
 }
